@@ -10,6 +10,14 @@
 	white-space: pre;
 }
 
+input.xdiconnect {
+	background-image: url(/images/logo-connect.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 46px;
+}
+
 button {
 	padding: 15px;
 }

@@ -51,6 +51,17 @@
 		<url-pattern>/deactivateticket</url-pattern>
 	</servlet-mapping>
 
+	<!-- CONTEXT PARAMETERS -->
+
+	<context-param>
+		<param-name>connectEndpointUri</param-name>
+		<param-value>http://localhost:9201/connect</param-value>
+	</context-param>
+	<context-param>
+		<param-name>baseReturnUri</param-name>
+		<param-value>http://localhost:7202/</param-value>
+	</context-param>
+
 	<!-- LISTENERS -->
 
 	<listener>
