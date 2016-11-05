@@ -1,5 +1,3 @@
 +!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0/$is()/{($to)}
 +!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0$do/$get/{$to}$card#address
 +!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0/$do/({$to}/$get)$do
-+!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0<$return><$uri>/&/"..."
-+!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0<$sig>/&/"..."

@@ -14,30 +14,54 @@ import xdi2.messaging.MessageEnvelope;
 
 public class WebshopConnectionRequest {
 
-	public static ConnectionRequest CONNECTION_REQUEST = null;
+	public static ConnectionRequest CONNECTION_REQUEST1 = null;
+	public static ConnectionRequest CONNECTION_REQUEST2 = null;
 
 	private static Logger log = LoggerFactory.getLogger(WebshopConnectionRequest.class);
 
-	public static ConnectionRequest connectionRequest(ServletContext servletContext) {
+	public static ConnectionRequest requestAddressConnectionRequest(ServletContext servletContext) {
 
-		if (CONNECTION_REQUEST == null) {
+		if (CONNECTION_REQUEST1 == null) {
 
 			try {
 
 				String baseReturnUri = servletContext.getInitParameter("baseReturnUri");
 
-				CONNECTION_REQUEST = ConnectionRequest.fromMessageEnvelope(MessageEnvelope.fromGraph(MemoryGraphFactory.getInstance().loadGraph(WebshopConnectionRequest.class.getResourceAsStream("/message.xdi"))));
-				log.info("Connection request: " + CONNECTION_REQUEST.getMessageEnvelope().getGraph().toString());
-				CONNECTION_REQUEST.sign(CloudName.create("+webshop"), "alice");
-				CONNECTION_REQUEST.setReturnUri(URI.create(baseReturnUri + "webshop-return"));
-				log.info("Connection request ready: " + CONNECTION_REQUEST.getMessageEnvelope().getGraph().toString());
+				CONNECTION_REQUEST1 = ConnectionRequest.fromMessageEnvelope(MessageEnvelope.fromGraph(MemoryGraphFactory.getInstance().loadGraph(WebshopConnectionRequest.class.getResourceAsStream("/message-request-address.xdi"))));
+				log.info("Connection request: " + CONNECTION_REQUEST1.getMessageEnvelope().getGraph().toString());
+				CONNECTION_REQUEST1.sign(CloudName.create("+webshop"), "alice");
+				CONNECTION_REQUEST1.setReturnUri(URI.create(baseReturnUri + "request-address-return"));
+				log.info("Connection request ready: " + CONNECTION_REQUEST1.getMessageEnvelope().getGraph().toString());
 			} catch (Exception ex) {
 
-				CONNECTION_REQUEST = null;
+				CONNECTION_REQUEST1 = null;
 				throw new RuntimeException(ex.getMessage(), ex);
 			}
 		}
 
-		return CONNECTION_REQUEST;
+		return CONNECTION_REQUEST1;
+	}
+
+	public static ConnectionRequest storeTicketConnectionRequest(ServletContext servletContext) {
+
+		if (CONNECTION_REQUEST2 == null) {
+
+			try {
+
+				String baseReturnUri = servletContext.getInitParameter("baseReturnUri");
+
+				CONNECTION_REQUEST2 = ConnectionRequest.fromMessageEnvelope(MessageEnvelope.fromGraph(MemoryGraphFactory.getInstance().loadGraph(WebshopConnectionRequest.class.getResourceAsStream("/message-store-ticket.xdi"))));
+				log.info("Connection request: " + CONNECTION_REQUEST2.getMessageEnvelope().getGraph().toString());
+				CONNECTION_REQUEST2.sign(CloudName.create("+webshop"), "alice");
+				CONNECTION_REQUEST2.setReturnUri(URI.create(baseReturnUri + "store-ticket-return"));
+				log.info("Connection request ready: " + CONNECTION_REQUEST2.getMessageEnvelope().getGraph().toString());
+			} catch (Exception ex) {
+
+				CONNECTION_REQUEST2 = null;
+				throw new RuntimeException(ex.getMessage(), ex);
+			}
+		}
+
+		return CONNECTION_REQUEST2;
 	}
 }

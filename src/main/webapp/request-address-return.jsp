@@ -24,13 +24,22 @@
 <h2>Your itinerary Vienna --&gt; Paris</h2>
 
 <%
-	String xdi = WebshopConnectionRequest.connectionRequest(request.getServletContext()).getMessageEnvelope().getGraph().toString("XDI/JSON", null);
+	String xdiresponse = (String) request.getAttribute("xdiresponse");
+	String xdirequest = WebshopConnectionRequest.storeTicketConnectionRequest(request.getServletContext()).getMessageEnvelope().getGraph().toString("XDI/JSON", null);
 %>
 
-<img src="images/trip.jpg">
+<img src="images/trip.jpg"><br><br>
+
+<p>We received your name and address!</p>
+
+<pre>
+<%= StringEscapeUtils.escapeHtml(xdiresponse) %>
+</pre>
+
+<p>Your ticket has been issued. We can store it in your Personal Cloud.</p>
 
 <form action="<%= request.getServletContext().getInitParameter("connectEndpointUri") %>" method="post">
-<input type="hidden" name="xdi" value="<%= StringEscapeUtils.escapeHtml(xdi) %>">	
+<input type="hidden" name="xdi" value="<%= StringEscapeUtils.escapeHtml(xdirequest) %>">	
 <input type="submit" value="" class="xdiconnect">
 </form>
 

@@ -21,3 +21,8 @@ input.xdiconnect {
 button {
 	padding: 15px;
 }
+
+pre {
+	font-family: Courier New, monospace;
+}
+

@@ -51,6 +51,26 @@
 		<url-pattern>/deactivateticket</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>RequestAddressReturnServlet</servlet-name>
+		<servlet-class>aeternam.xdi.RequestAddressReturnServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RequestAddressReturnServlet</servlet-name>
+		<url-pattern>/request-address-return</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>StoreTicketReturnServlet</servlet-name>
+		<servlet-class>aeternam.xdi.StoreTicketReturnServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>StoreTicketReturnServlet</servlet-name>
+		<url-pattern>/store-ticket-return</url-pattern>
+	</servlet-mapping>
+
 	<!-- CONTEXT PARAMETERS -->
 
 	<context-param>
