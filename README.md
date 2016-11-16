@@ -10,6 +10,14 @@ This is part of a demo for [ÆTERNAM](https://aeternam.eu/), it shows how a pass
 * [Screencast](https://vimeo.com/191811593)
 * [Diagrams](https://projectdanube.github.io/aeternam-xdi-webshop/XDI-AETERNAM-demo.pdf)
 
+### Demo Components
+
+ * **Maria**, a train passenger: https://github.com/projectdanube/aeternam-xdi-maria
+ * **Webshop**: https://github.com/projectdanube/aeternam-xdi-webshop
+ * **ÖBB**, a railway operator: https://github.com/projectdanube/aeternam-xdi-oebb
+ * **Deutsche Bahn**, a railway operator: https://github.com/projectdanube/aeternam-xdi-db
+ * **SNCF**, a railway operator: https://github.com/projectdanube/aeternam-xdi-sncf
+
 ### Details
 
 See the following wiki pages for more technical details:
