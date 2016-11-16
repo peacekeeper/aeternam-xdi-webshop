@@ -1,3 +1,3 @@
-+!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0/$is()/{($to)}
-+!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0$do/$get/{$to}$card#address
-+!:uuid:5badb01b-3b0b-4d06-9ba9-739f5be4fc59[$msg]@~0/$do/({$to}/$get)$do
++!:did:sov:1yvXbmgPoUm4dl66D7KhyD[$msg]@~0/$to/{($to)}
++!:did:sov:1yvXbmgPoUm4dl66D7KhyD[$msg]@~0$do/$get/{$to}$card#address
++!:did:sov:1yvXbmgPoUm4dl66D7KhyD[$msg]@~0/$contract/({$to}/$get)$contract
