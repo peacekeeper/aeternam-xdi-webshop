@@ -10,7 +10,7 @@ This is part of a demo for [ÆTERNAM](https://aeternam.eu/), it shows how a pass
 * [Screencast](https://vimeo.com/191811593)
 * [Diagrams](https://projectdanube.github.io/aeternam-xdi-webshop/XDI-AETERNAM-demo.pdf)
 
-See [aeternam-xdi-webshop](https://github.com/projectdanube/aeternam-xdi-webshop/) for a complete description of the demo setup.
+See [Description](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Description) for a complete description of the demo setup.
 
 ### How to build
 
