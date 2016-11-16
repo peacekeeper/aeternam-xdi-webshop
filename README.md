@@ -10,7 +10,17 @@ This is part of a demo for [ÆTERNAM](https://aeternam.eu/), it shows how a pass
 * [Screencast](https://vimeo.com/191811593)
 * [Diagrams](https://projectdanube.github.io/aeternam-xdi-webshop/XDI-AETERNAM-demo.pdf)
 
-See [Description](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Description) for a complete description of the demo setup.
+### Details
+
+See the following wiki pages for more technical details:
+
+ * [Components and Identifiers](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Components-and-Identifiers)
+ * [Maria's Personal Data](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Maria's-Personal-Data)
+ * [Train Ticket](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Train-Ticket)
+ * [Request for Personal Data](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Request-for-Personal-Data)
+ * [Request for Storing Ticket](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Request-for-Storing-Ticket)
+ * [Ticket Link Contract](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Ticket-Link-Contract)
+ * [Ticket Update](https://github.com/projectdanube/aeternam-xdi-webshop/wiki/Ticket-Update)
 
 ### How to build
 
